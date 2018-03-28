@@ -1,7 +1,7 @@
 package base;
 
 import edu.princeton.cs.algs4.StdOut;
-public class Ex_1_19 {
+public class Ex_3_19 {
 
 	public static long F(int N)
 	{
