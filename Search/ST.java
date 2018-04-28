@@ -21,7 +21,7 @@ package Search;
  * Iterable<key> keys(Key lo,Key hi):[lo,hi]之间的所有键，已排序
  * Iterable<key> keys():表中的所有键的集合，已排序 
  */
-public class ST {
+public class ST<Key,> {
 	void delete(Key key) {	put(key,null);	}
 	boolean contains(Key key) {	return get(key) != null;	}
 	boolean isEmpty() {	return size() == 0;	}

@@ -5,7 +5,7 @@ import edu.princeton.cs.algs4.StdOut;
 import base.Queue;
 
 /*
- * 基于无需链表：
+ * 基于无序链表：
  * void put(Key key,Value value):将键值对存入表中(如果key为空则将key从表中删除)
  * Value get(Key key):获取键key对于的值(如果键key不存在则返回null)
  * boolean contians(Key key):键key在表中是否有对于的值
