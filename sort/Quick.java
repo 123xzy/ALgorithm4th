@@ -1,14 +1,11 @@
 package sort;
 
-import com.sun.tools.corba.se.idl.constExpr.LessEqual;
-import com.sun.tools.javac.resources.legacy;
-
 /**
  * 快速排序
  * @author xzy
  *
  */
-public class Quick {
+public class Quick extends Example {
 	public static void sort(Comparable[] aComparables ,int lo,int hi) {
 		if(lo < hi) {
 			int j = partition(aComparables,lo,hi);
@@ -25,7 +22,7 @@ public class Quick {
 		while(true)
 		{
 			while(less(aComparables[++i],vComparable))if(i == hi)break;
-			while(less(v,aComparables[--j]))if(j == lo)break;
+			while(less(vComparable,aComparables[--j]))if(j == lo)break;
 			if(i >= j)break;
 			exch(aComparables,i,j);
 		}
