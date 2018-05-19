@@ -3,8 +3,14 @@ package Search;
 import edu.princeton.cs.algs4.StdIn;
 import edu.princeton.cs.algs4.StdOut;
 
+/**
+ * Use case of character table
+ * @author xzy
+ *
+ */
 public class FrequencyCounter {
-	public static void main(String[]args) {  
+	public static void main(String[]args) { 
+		
 		int minlen = Integer.parseInt(args[0]);//最小的键长
 		SequentialSearchST<String,Integer> st = new SequentialSearchST<String,Integer>();
 		while(!StdIn.isEmpty())
