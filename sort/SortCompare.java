@@ -6,7 +6,8 @@ import edu.princeton.cs.algs4.StdRandom;
 
 /** 
  * analyic model
- * argu:Insertion Selection 1000 100
+ * can calculate time of sort algorithms 
+ * use case:"Insertion Selection 1000 100"
  * @author xzy
  *
  */
@@ -24,6 +25,7 @@ public class SortCompare {
 		return timer.elapsedTime();
 	}
 	
+	/* test T times for a[N] in "alg" algorithm */
 	public static double timeRandomInput(String alg,int N,int T) {
 		double total = 0.0;
 		Double[] aDoubles = new Double[N];
